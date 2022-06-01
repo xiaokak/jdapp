@@ -1,7 +1,6 @@
 <template>
   <div class="main-box">
-    <router-link to="About">
-      <div class="card-box" v-for="(item, index) in cardList" :key="index">
+      <router-link :to="{name: 'ProductView', params:{id: item.id}}" class="card-box" v-for="(item, index) in cardList" :key="index">
         <aside>
           <img class="card-img" :src="item.img"/>
         </aside>
@@ -43,8 +42,7 @@
             </div>
           </div>
         </ul>
-      </div>
-    </router-link>
+      </router-link>
   </div>
 </template>
 
