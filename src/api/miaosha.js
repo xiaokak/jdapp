@@ -6,3 +6,11 @@ export const getTabs = () => {
     method: 'Get'
   })
 }
+
+export const getProduct = (res) => {
+  return instance({
+    url: '/getProduct',
+    method: 'GET',
+    data: res
+  })
+}

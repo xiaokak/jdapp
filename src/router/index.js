@@ -8,9 +8,14 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/product/:id',
+    path: '/product',
     name: 'ProductView',
     component: () => import('../views/ProductView')
+  },
+  {
+    path: '/cart',
+    name: 'CartView',
+    component: () => import('../views/CartView')
   }
 ]
 
